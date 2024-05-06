@@ -1,0 +1,158 @@
+:root {
+    --border:1px solid #D9D9D9;
+    --radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.logo {
+    display: flex;
+    margin-left: -120px;
+}
+
+.logo svg {
+    margin-right: 25px;
+}
+
+.header__leftside {
+    display: inherit;
+    flex-direction: row;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: var(--border);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    height: 42px;
+    background: url(../svg/icons/search.svg) no-repeat;
+    background-position: left 13px bottom 13px;
+    padding-left: 37px;
+}
+
+.search-input::placeholder {
+    font-size: 16px;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-right: -120px;
+}
+
+.right-side a {
+    text-decoration: none;
+    color: #000;
+}
+#place {
+    display: flex;
+    align-items: center;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    height: 42px;
+    padding-left: 15px;
+    padding-right: 95px;
+    
+}
+
+#btn-search {
+    height: 42px;
+    width: 42px;
+    background-color: #F65858;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    align-content: center;
+    padding-left: 10px;
+    
+}
+
+#btn-search:hover {
+    background-color: #d64b4b;
+}
+
+button {
+    border: none;
+}
+#btn-signup {
+    background-color: #00798a;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    margin-right: 50px;
+    margin-left: 22px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#btn-signup:hover {
+    background-color: #026875;
+}
+#log-in {
+    font-weight: 500;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+#language {
+    font-weight: 500;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+      
+    .right-side {
+        margin-left: 0;
+    }
+    .right-side {
+        margin-right: 0;
+    }
+    .logo {
+        margin-left: 0;
+    }
+   
+}
+@media (max-width: 992px) {
+      
+    #place {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 760px) {
+      
+    .logo {
+        flex-direction: column;
+        width: 100vw;
+        position: relative;
+    }
+    .header {
+        position: relative;
+    }
+   #main-logo {
+    margin-bottom: 10px;
+   }
+    .search {
+        width: 100%;
+    }
+    .search-input {
+        width: 100%;
+    }
+  
+   .right-side {
+    position: absolute;
+    right: 0px;
+   }
+
+   #btn-signup {
+    margin-right: 0;
+   }
+}
