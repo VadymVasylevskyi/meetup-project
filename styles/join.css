@@ -18,6 +18,10 @@
 }
 .join-text {
     order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 #join-text-content {
     margin-top: 16px;
@@ -26,6 +30,8 @@
 }
 
 #join-btn {
+    display: block;
+    width: fit-content;
     text-decoration: none;
     color: #fff;
     background-color: #E32359;
@@ -61,4 +67,28 @@
     }
   
    
+}
+
+@media (max-width: 340px) {
+    .joit-title {
+        font-size: 14px;
+    }
+    .join-img {
+        width: fit-content;
+    }
+    .join-img img {
+        max-height: 100px;
+    }
+
+    #join-text-content {
+        margin-right: 0;
+    }
+    .join-text p {
+        
+        font-size: 12px;
+    }
+
+    #join-btn {
+        padding: 6px 20px;
+    }
 }

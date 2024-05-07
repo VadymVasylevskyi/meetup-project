@@ -5,6 +5,7 @@ footer {
 }
 
 .get-started {
+    display: flex;
     color: #F6F7F8;
     width: 100%;
     border-bottom: 1px solid #707070;
@@ -13,6 +14,8 @@ footer {
 }
 
 .get-started a {
+    display: block;
+    width: fit-content;
     text-decoration: none;
     color: inherit;
     padding: 10px 15px;

@@ -85,7 +85,7 @@ button {
     font-weight: 500;
     padding: 8px 16px;
     border-radius: var(--radius);
-    margin-right: 50px;
+    /* margin-right: 50px; */
     margin-left: 22px;
     text-decoration: none;
     font-size: 14px;
@@ -155,4 +155,19 @@ button {
    #btn-signup {
     margin-right: 0;
    }
+}
+
+@media (max-width: 340px){
+    .logo svg {
+        max-width: 75px;
+
+  }
+
+  #btn-signup {
+    margin-left: 8px;
+  }
+
+  #log-in {
+    margin-left: 8px;
+  }
 }

@@ -1,6 +1,6 @@
 .intro__content {
     display: flex;
-    margin-top: 71px;
+    
 }
 
 .intro-title {
@@ -20,6 +20,8 @@
 }
 
 #join {
+    display: block;
+    width: fit-content;
     padding: 12px 18px;
     color: #fff;
     background-color: #00798A;
@@ -76,5 +78,21 @@
     }
     #intro-img {
         margin: 0 auto; 
+    }
+}
+
+@media (max-width: 340px) {
+    .intro-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #intro-img {
+        max-width: 300px;
     }
 }

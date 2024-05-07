@@ -49,8 +49,14 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .meetup-card a {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 568px) {
+    .cities-subtitle {
+        display: none;
     }
 }

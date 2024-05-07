@@ -44,7 +44,26 @@
     .how-content {
         padding: 20px;
     }
+
+    .how-text {
+        margin-right: 100px;
+    }
     .how-content a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 568px) {
+    .how-text {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .how-title {
+        font-size: 14px;
+    }
+    .how-text p {
         font-size: 14px;
     }
 }
