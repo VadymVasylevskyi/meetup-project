@@ -25,9 +25,9 @@ function formatDate(dateString) {
 
 function getEvents() {
     const eventType = selectType.value
-    let eventDistance = Infinity
+    let eventDistance;
     if (selectDist.value !== 'any-type') {
-        eventDistance = parseInt(selectDist.value)
+    eventDistance = parseInt(selectDist.value)
     }
     let eventCategory = ''
     if (selectCat.value !== 'any-category') {
@@ -41,8 +41,8 @@ function getEvents() {
     eventsStore.forEach((e) => {
         if (
             (eventType === 'any' || e.type === eventType) &&
-            (eventDistance === Infinity || e.distance <= eventDistance) &&
-            (eventCategory === '' || e.category.includes(eventCategory))
+            (!eventDistance || e.distance <= eventDistance) &&
+            (!eventCategory || e.category.includes(eventCategory))
         ) {
             const card = createEl({tag: 'div', className: 'card2'})
             const cardImg = createEl({tag: 'img', className: 'card2-image', src: e.image})
